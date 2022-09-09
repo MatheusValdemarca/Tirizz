@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="shortcut icon" href="img/Logo Site.svg" type="image/x-icon">
+  
+  </head>
+  <body>
+    <!-- html5 -->
+    <nav>
+      <div class="container">
+        <h1>
+          <!-- descomente esse link -->
+          <a href="/">
+            <img src="img/Logo Site.svg" alt="Meu Logotipo" />
+          </a>
+        </h1>
+        <ul>
+          <li>
+            <a href="servicos.html">serviços</a>
+          </li>
+          <li>
+            <a href="contato.html">contato</a>
+          </li>
+          <li>
+            <a href="produto.html">Produto</a>
+          </li>
+          <li>
+            <a href="/">início</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="jj">
+      <div class="container clearfix">
+        <div class="col-12">
+          <form id="contato">
+            <label for="nome">Informe seu Nome</label>
+            <input type="text" name="nome" id="nome"
+            placeholder="Informe seu Nome" required="true">
+
+            <label for="email">Informe seu E-mail</label>
+            <input type="email" name="email" id="email"
+            placeholder="Informe seu E-mail" required="true">
+
+            <label>Informe sua Turma</label>
+            <div class="form-group">
+                <input type="radio" name="turma" id="turma_1A"
+                value="1A" checked>
+                <label for="turma_1A">1A</label>
+                <input type="radio" name="turma" id="turma_1B"
+                value="1B">
+                <label for="turma_1B">1B</label>
+            </div>
+
+            <label for="nome">Motivo</label>
+            <select name="motivo" id="motivo" required>
+              <option value="">Selecione o Motivo</option>
+              <option value="duvida">Dúvida &spades;</option>
+              <option value="sugestao">Sugestão &clubs;</option>
+              <option value="problema">Relatar problema &diams;</option>
+              <option value="outro">Outro	&hearts;</option>
+            </select>
+
+            <label for="mensagem">Informe sua mensagem</label>
+            <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+
+            <!-- <input type="submit" value="Enviar"> -->
+            <button type="submit" class="botaoc">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+      <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+        (function(){emailjs.init("QEWBX6mcp24yaOVoC");})();
+      </script>
+      <script src="js/main.js"></script>
+    </main>
+
+    <footer class="footert">
+      <div class="container">
+        <div class="container clearfix">
+
+          <div class="col-2"></div>
+
+          <div class="col-4">
+            <h3>Links úteis</h3>
+            <ul>
+              <li>CNPq</li>
+              <li>CAPES</li>
+              <li>Periódicos</li>
+              <li>SIAPEnet</li>
+              <li>SCDP</li>
+              <li>Serpro</li>
+              <li>Comprasnet</li>
+            </ul>
+          </div>
+          <div class="col-2"></div>
+          <div class="col-4">
+            <h3>Institucional</h3>
+            <ul>
+              <li>Sobre o IFC</li>
+              <li>Sobre o Campus</li>
+              <li>Contato</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container center">
+        <p>
+          Instituto Federal de Educação Ciência e Tecnologia Catarinense - Campus Videira
+        </p>
+        <p>
+          Rodovia SC 135, km 125 - Bairro Campo Experimental - CEP 89564-590 - Videira - SC - Fone: (49) 3533-4900
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
